@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+        <div class="logo-container">
+            <h1 class="logo">CineSpot</h1>
+        </div>
+        <div class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-list-item .active">Home</li>
+                <li class="menu-list-item">Movies</li>
+                <li class="menu-list-item">Series</li>
+                <li class="menu-list-item">Popular</li>
+                <li class="menu-list-item">Trends</li>
+            </ul>
+        </div>
+        <h2>🎬Telugu Movie Search</h2>
+    <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Enter a Telugu movie name">
+    <button id="search-btn">Search</button>
+    </div>
+    <div id="movie-container">
+        <!-- Movie information will be added here dynamically -->
+    </div>
+    
+    <div id="movie-info"></div>
+    
+        <div class="profile-container">
+            <img class="profile-picture" src="https://i.pinimg.com/736x/99/65/6a/99656ab1f99f7dc6cdd7561501810ef8.jpg"  alt="">
+        <div class="profile-text-container">
+            <span class="profile-text">Profile</span>
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="toggle">
+            <i class="fa-solid fa-moon toggle-icon"></i>
+            <i class="fa-solid fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon fa-solid fa-house-chimney"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content" 
+            style="background-image: linear-gradient(to bottom, rgba(0,0,0,0),#151515),url(./bg1.png);">
+        <br>
+        <br>
+      <br>
+        
+        
+            <p class="featured-desc"> Discover movie details instantly with our Movie Finder!  
+                Search for any movie and get information like IMDb rating, genre, director, cast, and plot in seconds.  
+                Stay updated and explore your favorite movies effortlessly!
+            </p>
+            <button class="featured-button">Watch </button>
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">NEW RELEASES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="SR.png" alt="">
+                        <span class="movie-list-item-title">Sita Ramam</span>
+                        <p class="movie-list-item-desc">It is a poignant love story, 
+                            set in 1960s India, about a soldier and a princess 
+                            who find love through letters.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="mad.png" alt="">
+                        <span class="movie-list-item-title">Mad square</span>
+                        <p class="movie-list-item-desc"> The MAD trio find themselves cornered for a crime in Goa 
+                            and the holiday descends into a chaos.
+                            </p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="court.png" alt="">
+                        <span class="movie-list-item-title">Court</span>
+                        <p class="movie-list-item-desc">The Indian Telugu-language legal drama film
+                             "Court" released in 2025, 
+                            was directed by Ram Jagadeesh in his directorial debut. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="robin.png" alt="">
+                        <span class="movie-list-item-title">Robinhood</span>
+                        <p class="movie-list-item-desc">The film promised a slick, action-packed storyline with high-voltage
+                             stunts and mass appeal. </p>  
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="amaran.png" alt="">
+                        <span class="movie-list-item-title">Amaran</span>
+                        <p class="movie-list-item-desc">"Amaran" is a biographical war film that 
+                            tells the story of Major Mukund Varadarajan, an Indian Army officer, 
+                            and his wife Indhu,
+                             focusing on their love story and his heroic actions. 
+                            </p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="bahubali2.png" alt="">
+                        <span class="movie-list-item-title">Bahubali2</span>
+                        <p class="movie-list-item-desc">It is a
+                             grand, action-packed epic that answers the "why Kattappa killed Baahubali" question,
+                              while exploring the
+                              story of Amarendra Baahubali's lineage and the struggle
+                             for the throne of Mahishmat</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="majili.png" alt="">
+                        <span class="movie-list-item-title">Majili</span>
+                        <p class="movie-list-item-desc">It is a Telugu romantic drama that follows a man struggling 
+                            to move on from his past love while his wife, played by Samantha, 
+                            tries to help him find happiness and love again. </p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">NEW RELEASES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="bahubali1.png" alt="">
+                        <span class="movie-list-item-title">bahubali1</span>
+                        <p class="movie-list-item-desc">Baahubali: The Beginning" follows Sivudu, a tribal warrior, 
+                            as he discovers his royal heritage and embarks on a mission
+                             to avenge his father and overthrow a tyrannical ruler</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="rrr.png" alt="">
+                        <span class="movie-list-item-title">RRR</span>
+                        <p class="movie-list-item-desc">RRR is an entirely fictitious story incorporating the lives of two real-life Indian revolutionaries, 
+                            namely Alluri Sitarama Raju and Komaram Bheem.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="kalki.png" alt="">
+                        <span class="movie-list-item-title">Kalki</span>
+                        <p class="movie-list-item-desc">It is a epic mythological science fiction film
+                             set in a dystopian future, following a group on a mission to protect the unborn
+                              child of a lab subject, believed to be Kalki,
+                             the final avatar of Vishnu.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="zebra.png" alt="">
+                        <span class="movie-list-item-title">Zebra</span>
+                        <p class="movie-list-item-desc">A financial crime thriller where a bank employee,
+         gets entangled in a multi-crore scam while trying to protect his girlfriend,
+                            leading to a high-stakes battle for survival and innocence. </p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="Radhesyham.png" alt="">
+                        <span class="movie-list-item-title">Radhe Shyam</span>
+                        <p class="movie-list-item-desc"> It is a period romantic drama set in 1970s
+                             Italy, following a renowned palmist who finds his beliefs
+                              challenged by love, while also grappling with destiny and a
+                               potential emergency. 
+                        </p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="salaar.png" alt="">
+                        <span class="movie-list-item-title">Salaar</span>
+                        <p class="movie-list-item-desc">An epic action drama film, directed by Prashanth Neel,
+                             following the story of two childhood friends
+                             turned enemies in a dystopian world. </p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="featured-content1" 
+        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0),#151515),url(./bg2.png);">
+    
+        
+        
+        <br>
+        <br>
+    
+        <p class="featured-desc1"> Discover movie details instantly with our Movie Finder!  
+            Search for any movie and get information like IMDb rating, genre, director, cast, and plot in seconds.  
+            Stay updated and explore your favorite movies effortlessly!
+        </p>
+        <button class="featured-button">Watch </button>
+    </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">NEW RELEASES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="pushpa2.png" alt="">
+                        <span class="movie-list-item-title">Pushpa2</span>
+                        <p class="movie-list-item-desc">The rise of Pushpa Raj, a labourer-turned-red sandalwood smuggler, as he faces growing threats and rises to become a kingmaker in the smuggling syndicate.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="thandel.png" alt="">
+                        <span class="movie-list-item-title">Thandel</span>
+                        <p class="movie-list-item-desc"> It's a romantic action drama inspired by a real-life incident where fishermen from Srikakulam 
+                            accidentally drifted into Pakistani waters and were detained.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="gc.png" alt="">
+                        <span class="movie-list-item-title">GameChanger</span>
+                        <p class="movie-list-item-desc">It is a political action thriller directed by Shankar, starring Ram Charan and Kiara Advani, that follows an IAS officer's
+                             fight against a corrupt political system.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="lucky.png" alt="">
+                        <span class="movie-list-item-title">Lucky Bhaskar</span>
+                        <p class="movie-list-item-desc">Telugu period crime drama film about a lower-middle-class man who engages in financial scams after struggling to support his family, 
+                            inspired by the Harshad Mehta case.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="pushpa1.png" alt="">
+                        <span class="movie-list-item-title">Pushpa</span>
+                        <p class="movie-list-item-desc">The Rise: follows a lorry driver named Pushpa Raj who rises through the ranks of a red sandalwood smuggling syndicate
+                             in the Seshachalam Hills of Andhra Pradesh. </p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="SR.png" alt="">
+                        <span class="movie-list-item-title">Sita Ramam</span>
+                        <p class="movie-list-item-desc">It is a poignant love story, 
+                            set in 1960s India, about a soldier and a princess 
+                            who find love through letters.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">NEW RELEASES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="devara.png" alt="">
+                        <span class="movie-list-item-title">Devara</span>
+                        <p class="movie-list-item-desc">"Devara: Part 1" is a Telugu action drama starring 
+                            Jr. NTR, inspired by the Karamchedu massacre, exploring caste oppression.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="ms dhoni.png" alt="">
+                        <span class="movie-list-item-title">MS Dhoni</span>
+                        <p class="movie-list-item-desc">"M.S. Dhoni: The Untold Story" is a biographical sports drama that chronicles 
+                            the journey of Indian cricketer Mahendra Singh Dhoni.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="jersey.png" alt="">
+                        <span class="movie-list-item-title">Jersey</span>
+                        <p class="movie-list-item-desc">"Jersey" is a sports drama about a former cricketer, Arjun Talwar, who returns to the game
+                             at 36 to fulfill his son's dream and prove his own ability.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="kgf2.png" alt="">
+                        <span class="movie-list-item-title">KGF2</span>
+                        <p class="movie-list-item-desc">"K.G.F: Chapter 2" is a 2022 Indian Kannada-language action film, a sequel to "K.G.F: Chapter 1",
+                             following Rocky's quest for power and revenge in the Kolar Gold Fields.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="sahoo.png" alt="">
+                        <span class="movie-list-item-title">Saaho</span>
+                        <p class="movie-list-item-desc">"Saaho" is a 2019 Indian action thriller film starring Prabhas and Shraddha Kapoor, 
+                            known for its high-octane action sequences.</p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="kgf1.png" alt="">
+                        <span class="movie-list-item-title">kgf1</span>
+                        <p class="movie-list-item-desc">"KGF: Chapter 1" follows Rocky, a mercenary, as he rises to power in the Kolar Gold Fields, fulfilling his mother's promise of wealth and influence, 
+                            while seeking to assassinate Garuda, the son of the mine's founder. </p>      
+                            <button class="movie-list-item-button">Watch</button>
+                        
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+            </div>
+        </div>    
+       
+    </div>
+</div>
+
+    <script src="index.js"></script>
+</body> 
+</html>
